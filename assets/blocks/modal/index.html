@@ -1,0 +1,113 @@
+<div tabindex="-1" class="modal fade modal-default jsModalDelImage">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal__box modal__info">
+                <div class="modal__box-delImage">
+                    <div class="image">
+                        <span style="background-image: url('/images/stickers/2.png');"></span>
+                    </div>
+                    <div class="info">
+                        <h3>Вы точно хотите удалить изображение?</h3>
+                        <div class="buttons">
+                            <a href="#" class="btn btn-gray">
+                                <span>Отмена</span>
+                            </a>
+                            <a href="#" class="btn btn-orange">
+                                <span>Подтвердить</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div tabindex="-1" class="modal fade modal-default jsModalMessage">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal__box modal__info">
+                <button type="button" class="modal__box-close modal-close close" data-dismiss="modal"
+                    aria-label="Close"></button>
+                <div class="modal__box-message">
+                    <div class="image">
+                        <span style="background-image: url('/images/stickers/3.png');"></span>
+                    </div>
+                    <div class="info">
+                        <h3>Все прошло успешно!</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div tabindex="-1" class="modal fade modal-default jsModalFeedback">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal__box modal__info">
+                <button type="button" class="modal__box-close modal-close close" data-dismiss="modal"
+                    aria-label="Close"></button>
+                <div class="modal__box-feedback">
+                    <h3>Остались вопросы?</h3>
+                    <p>Пожалуйста, заполните заявку, и наша Служба Заботы свяжется с вами..</p>
+                    <form action="#">
+                        <label class="form__input icon">
+                            <i class="fa fa-user"></i>
+                            <input type="text" placeholder="Ваше имя..." required>
+                        </label>
+                        <label class="form__input icon">
+                            <i class="fa fa-envelope"></i>
+                            <input type="text" placeholder="Ваш e-mail..." required>
+                        </label>
+                        <label class="form__input icon">
+                            <i class="fa fa-phone"></i>
+                            <input type="text" placeholder="Ваш телефон..." required>
+                        </label>
+                        <div class="form__button">
+                            <button class="btn">
+                                <span>Оставить заявку</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div tabindex="-1" class="modal fade modal-default jsModalLoadImage">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal__box modal__info">
+                <button type="button" class="modal__box-close modal-close close" data-dismiss="modal"
+                    aria-label="Close"></button>
+                <div class="modal__box-loadImage">
+                    <h3>Загрузите фотографию</h3>
+                    <p class="subtext">Вы можете загрузить изображение в формате JPG, GIF или PNG.</p>
+                    <p class="subtext hide">Выбранная область будет выводиться в вашем аккаунте.</p>
+                    <div class="image-wrapper hide">
+                        <div id="image-container">
+                            <img name="image-data" id="image-data" src="/images/image-default.png" alt="picture">
+                        </div>
+                        <div class="image-btns">
+                            <button type="button" class="btn btn-light" id="crop_button">
+                                <span>Сохранить и продолжить</span>
+                            </button>
+                            <button type="button" class="btn btn-gray" id="cancel_button">
+                                <span>Отмена</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="input-btn">
+                        <input type="file" id="input-file" accept="image/jpeg,image/png,image/gif" required>
+                        <label class="btn btn-gray" for="input-file">
+                            <span>Выбрать файл</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

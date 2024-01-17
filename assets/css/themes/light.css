@@ -1,0 +1,275 @@
+section {
+    &.bg__light {
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            pointer-events: none;
+            background: var(--gradient-light-blue);
+            opacity: .15;
+        }
+
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            pointer-events: none;
+            @mixin i background/bg2;
+            background-position: top center;
+        }
+
+        .timer__timer .item {
+            background: var(--color-white);
+        }
+
+        .faq__questions .accordion__item {
+            background: var(--color-white);
+        }
+
+        .prices__list-bg i.active {
+            background: var(--color-white);
+        }
+    }
+
+    &.bg__light-gray {
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            pointer-events: none;
+            background: var(--color-light-gray);
+            opacity: .15;
+        }
+    }
+
+    &.bg__light-red {
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            pointer-events: none;
+            background: var(--gradient-light-red);
+            opacity: .15;
+        }
+
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            pointer-events: none;
+            @mixin i background/bg2_red;
+            background-position: top center;
+        }
+
+        h1 span, h2 span, h3 span, h4 span, h5 span, h6 span, .h1 span, .h2 span, .h3 span, .h4 span, .h5 span, .h6 span,
+        .static__list-item__icon span,
+        .stages__content-number,
+        .stages__content-navigation .start.active,
+        .stages__content-navigation .end.active,
+        ul li:before {
+            background-color: var(--color-red);
+        }
+
+        .static__teachers-card__position,
+        .product__price,
+        .cart__body-item__cell.price,
+        .cart__body-item__cell.total,
+        .teacher__position,
+        &.map h4,
+        .static__cards-card__costs .price {
+            background: var(--gradient-red);
+            -webkit-background-clip: text !important;
+        }
+
+        .timer__timer .item {
+            background: var(--color-white);
+        }
+
+        .faq__questions .accordion__item {
+            background: var(--color-white);
+        }
+
+        .prices__list-bg i.active {
+            background: var(--color-white);
+        }
+
+        .static__teachers-card__image {
+            background: #fde3e3;
+        }
+
+        .pagination li.page-item.active,
+        .pagination li.page-item.prev:not(.inactive) a:before,
+        .pagination li.page-item.next:not(.inactive) a:before,
+        .counters__icon span,
+        .swiper-button-prev,
+        .swiper-button-next {
+            background: var(--gradient-red);
+        }
+
+        blockquote {
+            background: var(--gradient-light-red);
+        }
+
+        ol li:before,
+        blockquote,
+        .pagination li.page-item a:hover,
+        .static__list-item__number strong,
+        .main__content h1, .main__content .h1,
+        &.structure .accordion__item.active .accordion__item-header>span,
+        &.structure .accordion__item.active .accordion__item-header__caret:before,
+        &.structure .accordion__item.active .accordion__item-header .type,
+        .faq__questions .accordion__item.active .accordion__item-header {
+            color: var(--color-red);
+        }
+
+        .static__list-item__number,
+        .static__list-item__icon:before {
+            background: #fde3e3;
+        }
+
+        .product__gallery-images__image.active {
+            border-color: var(--color-red);
+        }
+
+        &.stages .row.active svg path {
+            fill: var(--color-red)
+        }
+
+        .stages__content-navigation .progress {
+            background: linear-gradient(180deg,#e0e0e0 0%,var(--color-red) 23.44%,var(--color-red) 75%,#e0e0e0 100%);
+        }
+    }
+
+    &.bg__light-orange {
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            pointer-events: none;
+            background: var(--gradient-light-orange);
+            opacity: .15;
+        }
+
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            pointer-events: none;
+            @mixin i background/bg2_orange;
+            background-position: top center;
+        }
+
+        h1 span, h2 span, h3 span, h4 span, h5 span, h6 span, .h1 span, .h2 span, .h3 span, .h4 span, .h5 span, .h6 span,
+        .static__list-item__icon span,
+        .stages__content-number,
+        .stages__content-navigation .start.active,
+        .stages__content-navigation .end.active,
+        ul li:before {
+            background-color: var(--color-orange);
+        }
+
+        .static__teachers-card__position,
+        .product__price,
+        .cart__body-item__cell.price,
+        .cart__body-item__cell.total,
+        .teacher__position,
+        &.map h4,
+        .static__cards-card__costs .price {
+            background: var(--gradient-orange);
+            -webkit-background-clip: text !important;
+        }
+
+        .timer__timer .item {
+            background: var(--color-white);
+        }
+
+        .faq__questions .accordion__item {
+            background: var(--color-white);
+        }
+
+        .prices__list-bg i.active {
+            background: var(--color-white);
+        }
+
+        .static__teachers-card__image {
+            background: #fdf4e3;
+        }
+
+        .pagination li.page-item.active,
+        .pagination li.page-item.prev:not(.inactive) a:before,
+        .pagination li.page-item.next:not(.inactive) a:before,
+        .counters__icon span,
+        .swiper-button-prev,
+        .swiper-button-next {
+            background: var(--gradient-orange);
+        }
+
+        blockquote {
+            background: var(--gradient-light-orange);
+        }
+
+        ol li:before,
+        blockquote,
+        .pagination li.page-item a:hover,
+        .static__list-item__number strong,
+        .main__content h1, .main__content .h1,
+        &.structure .accordion__item.active .accordion__item-header>span,
+        &.structure .accordion__item.active .accordion__item-header__caret:before,
+        &.structure .accordion__item.active .accordion__item-header .type,
+        .faq__questions .accordion__item.active .accordion__item-header {
+            color: var(--color-orange);
+        }
+
+        .static__list-item__number,
+        .static__list-item__icon:before {
+            background: #fdf4e3;
+        }
+
+        .product__gallery-images__image.active {
+            border-color: var(--color-orange);
+        }
+
+        &.stages .row.active svg path {
+            fill: var(--color-orange);
+        }
+
+        .stages__content-navigation .progress {
+            background: linear-gradient(180deg,#e0e0e0 0%,var(--color-orange) 23.44%,var(--color-orange) 75%,#e0e0e0 100%);
+        }
+    }
+}

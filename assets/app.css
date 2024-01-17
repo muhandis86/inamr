@@ -1,0 +1,17 @@
+@import url(css/_reset.css);
+@import url(../node_modules/cropperjs/dist/cropper.min.css);
+@import url(css/_mixin.css);
+@import url(css/_variables.css);
+@import url(css/_fonts.css);
+@import url(css/_swiper.css);
+
+@import url(css/_default.css);
+@import url(css/_paddings.css);
+@import url(blocks/modal/bootstrap.css);
+@import url(blocks/modal/style.css);
+
+@import url(css/themes/text_white.css);
+@import url(css/themes/blue.css);
+@import url(css/themes/orange.css);
+@import url(css/themes/red.css);
+@import url(css/themes/light.css);

@@ -1,0 +1,100 @@
+:root {
+    --font-base: 'Euclid Circular A', serif;
+
+    --color-default: #192335;
+    --color-primary: #2196F3;
+    --color-secondary: #FF9800;
+
+    --color-blue: #2196F3;
+    --color-orange: #FF9800;
+    --color-red: #F44336;
+    --color-cyan: #26C6DA;
+    --color-green: #8BC34A;
+
+    --color-light-blue: #BBDEFB;
+    --color-light-orange: #FFE0B2;
+    --color-light-red: #FFCDD2;
+    --color-light-cyan: #B2EBF2;
+
+    --color-gray: #999999;
+    --color-gray2: #B3B6BC;
+    --color-light-gray: #E0E0E0;
+    --color-white: #FFFFFF;
+
+    --gradient-blue: linear-gradient(90deg, var(--color-blue) -1.78%, #26C6DA 135.5%);
+    --gradient-orange: linear-gradient(90deg, var(--color-orange) -1.78%, #FFCA28 135.5%);
+    --gradient-red: linear-gradient(90deg, var(--color-red) -1.78%, #EC407A 135.5%);
+    --gradient-light-blue: linear-gradient(90deg, var(--color-light-blue) -1.78%, #E0F7FA 135.5%);
+    --gradient-light-red: linear-gradient(90deg, var(--color-light-red) -1.78%, #fae0e0 135.5%);
+    --gradient-light-orange: linear-gradient(90deg, var(--color-light-orange) -1.78%, #faf2e0 135.5%);
+    --gradient-super-light-blue: linear-gradient(90deg, #F5FAFE -1.78%, #F9FDFE 135.5%);
+
+    --fa-style-family: 'Font Awesome 6 Free';
+    --fa-style: 900;
+    --fa-display: inline-block;
+    --fa-li-margin: 2.5em;
+    --fa-li-width: 2em;
+    --fa-border-color: #eee;
+    --fa-border-radius: 0.1em;
+    --fa-border-style: solid;
+    --fa-border-width: 0.08em;
+    --fa-pull-margin: 0.3em;
+    --fa-animation-delay: 0s;
+    --fa-animation-direction: normal;
+    --fa-animation-duration: 1s;
+    --fa-animation-iteration-count: infinite;
+    --fa-animation-timing: ease-in-out;
+    --fa-beat-scale: 1.25;
+    --fa-bounce-start-scale-x: 1.1;
+    --fa-bounce-start-scale-y: 0.9;
+    --fa-bounce-jump-scale-x: 0.9;
+    --fa-bounce-jump-scale-y: 1.1;
+    --fa-bounce-height: -0.5em;
+    --fa-bounce-land-scale-x: 1.05;
+    --fa-bounce-land-scale-y: 0.95;
+    --fa-bounce-rebound: -0.125em;
+    --fa-fade-opacity: 0.4;
+    --fa-beat-fade-opacity: 0.4;
+    --fa-beat-fade-scale: 1.125;
+    --fa-flip-x: 0;
+    --fa-flip-y: 1;
+    --fa-flip-z: 0;
+    --fa-flip-angle: -180deg;
+    --fa-rotate-angle: none;
+    --fa-stack-z-index: auto;
+    --fa-inverse: #fff;
+    --fa-style-family-brands: 'Font Awesome 6 Brands';
+    --fa-font-brands: normal 400 1em/1 'Font Awesome 6 Brands';
+    --fa-style-family-classic: 'Font Awesome 6 Free';
+    --fa-font-regular: normal 400 1em/1 'Font Awesome 6 Free';
+    --fa-style-family-classic: 'Font Awesome 6 Free';
+    --fa-font-solid: normal 900 1em/1 'Font Awesome 6 Free';
+
+    --swiper-theme-color: #007aff;
+    --swiper-navigation-size: 44px;
+    --swiper-pagination-color: var(--swiper-theme-color);
+    --swiper-pagination-bullet-size: 8px;
+    --swiper-pagination-bullet-width: 8px;
+    --swiper-pagination-bullet-height: 8px;
+    --swiper-pagination-bullet-inactive-color: #000;
+    --swiper-pagination-bullet-inactive-opacity: 0.2;
+    --swiper-pagination-bullet-opacity: 1;
+    --swiper-pagination-bullet-horizontal-gap: 4px;
+    --swiper-pagination-bullet-vertical-gap: 6px;
+    --swiper-preloader-color: var(--swiper-theme-color);
+    --swiper-centered-offset-before: 0px;
+    --swiper-centered-offset-after: 0px;
+    --swiper-virtual-size: 0px;
+}
+
+
+/* @media (min-width: 1920px) {
+    :root {
+        --swiper-navigation-size: 55px;
+        --swiper-pagination-bullet-size: 10px;
+        --swiper-pagination-bullet-width: 10px;
+        --swiper-pagination-bullet-height: 10px;
+        --swiper-pagination-bullet-horizontal-gap: 5px;
+        --swiper-pagination-bullet-vertical-gap: 8px;
+    }
+} */

@@ -1,0 +1,69 @@
+section {
+    &.bg__red {
+        background: var(--gradient-red);
+
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            pointer-events: none;
+            @mixin i background/bg1;
+            background-position: top center;
+        }
+
+        &.bg__image {
+            overflow-y: hidden;
+
+            &:before {
+                z-index: 2;
+                background: #D32F2F;
+                opacity: .75;
+            }
+        }
+
+        form {
+            label {
+                i {
+                    color: var(--color-default);
+                }
+            }
+        }
+
+        .video__preview:before,
+        .static__video-image:before {
+            background: rgba(255, 255, 255, 1);
+        }
+
+        .static__list-item__number strong {
+            color: var(--color-red);
+        }
+
+        .product__gallery-images__image.active {
+            border-color: var(--color-red);
+        }
+
+        .stages__content-number {
+            color: var(--color-red) !important;
+        }
+
+        .stages__content-navigation .progress {
+            background: linear-gradient(180deg,#f57180 0%,#fff 23.44%,#fff 75%,#f57180 100%) !important;
+        }
+
+        .stages__content-navigation .start,
+        .stages__content-navigation .end,
+        .stages__content-navigation:after {
+            background: #f57180 !important;
+        }
+
+        .stages__content-navigation .start.active,
+        .stages__content-navigation .end.active {
+            background: var(--color-white) !important;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+section {
+    &.bg__blue {
+        background: var(--gradient-blue);
+
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            pointer-events: none;
+            @mixin i background/bg1;
+            background-position: top center;
+        }
+
+        &.bg__image {
+            overflow-y: hidden;
+
+            &:before {
+                z-index: 2;
+                background: #1976D2;
+                opacity: .75;
+            }
+        }
+
+        form {
+            label {
+                i {
+                    color: var(--color-default);
+                }
+            }
+        }
+    }
+}

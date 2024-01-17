@@ -1,0 +1,259 @@
+section {
+    &.bg__text-white {
+        color: var(--color-white);
+
+        .form__checkbox [type=checkbox]+label p a {
+            background: none;
+            color: var(--color-white);
+
+            -webkit-background-clip: unset;
+            -webkit-text-fill-color: unset;
+
+            text-decoration: underline;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        h1 span,
+        h2 span,
+        h3 span,
+        h4 span,
+        h5 span,
+        h6 span,
+        .h1 span,
+        .h2 span,
+        .h3 span,
+        .h4 span,
+        .h5 span,
+        .h6 span,
+        .teacher__position,
+        &.map h4,
+        .cart__body-item__cell.price,
+        .cart__body-item__cell.total,
+        .product__price {
+            background: none;
+            color: var(--color-white);
+
+            -webkit-background-clip: unset;
+            -webkit-text-fill-color: unset;
+        }
+
+        .static__cards-card > p,
+        .static__cards-card__teacher .title,
+        .product__cta-amount,
+        .cart__body-item__cell.amount .input,
+        .static__teachers-card > p {
+            color: var(--color-default);
+        }
+
+        .news__top-item__content a.h4,
+        .static__video-title,
+        .static__video-snippet,
+        .main__content h1,
+        .main__content .h1,
+        .breadcrumbs a,
+        .product__reviews .total,
+        &.structure .accordion__item.active .accordion__item-header__caret:before,
+        .structure__content-item__actions .time,
+        .structure__content-item__actions .locked,
+        .teacher__content .item,
+        .video__title,
+        &.cta p.text-gray {
+            color: var(--color-white);
+
+            &:hover {
+                color: var(--color-white);
+            }
+        }
+
+        .news__top-item__content .badge.badge-gray {
+            background: var(--color-white);
+        }
+
+        ul li:before {
+            background: var(--color-white);
+        }
+
+        ol li:before {
+            color: var(--color-white);
+        }
+
+        .pagination li.page-item.active {
+            background: var(--color-white);
+            color: var(--color-default);
+        }
+
+        .pagination li.page-item {
+            background: rgba(255, 255, 255, .25);
+            @mixin t;
+
+            &:hover {
+                background: rgba(255, 255, 255, .33);
+            }
+
+            a {
+                color: var(--color-white);
+            }
+
+            &.empty {
+                background: none;
+            }
+
+            &.prev {
+                background: none;
+
+                a:before {
+                    background: var(--color-white);
+                }
+
+                &.inactive {
+                    a:before {
+                        opacity: .5;
+                    }
+                }
+            }
+
+            &.next {
+                background: none;
+
+                a:before {
+                    background: var(--color-white);
+                }
+
+                &.inactive {
+                    a:before {
+                        opacity: .5;
+                    }
+                }
+            }
+        }
+
+        blockquote {
+            background: rgba(255, 255, 255, .25);
+            color: var(--color-white);
+        }
+
+        .timer__timer .item {
+            background: rgba(255, 255, 255, .25);
+        }
+
+        .faq__questions .accordion__item {
+            background: rgba(255, 255, 255, .25);
+        }
+
+        .faq__questions .accordion__item.active .accordion__item-header {
+            color: var(--color-white);
+        }
+
+        .static__list-item__icon:before {
+            background: none;
+        }
+
+        .static__list-item__icon span,
+        .static__list-item__number,
+        .breadcrumbs i,
+        .counters__icon span {
+            background: var(--color-white);
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            background: var(--color-white);
+        }
+
+        .stages__content-icon svg path {
+            fill: rgba(255, 255, 255, .25);
+        }
+
+        &.stages .row.active svg path,
+        .prices__list-icons .item:not(.active) .item__icon svg path,
+        .teacher__content .item svg path {
+            fill: rgba(255, 255, 255, 1) !important;
+        }
+
+        .stages__content-number {
+            background: var(--color-white);
+            color: var(--color-blue);
+        }
+
+        .stages__content-navigation:after {
+            background: #91d6f3;
+        }
+
+        .stages__content-navigation .progress {
+            background: linear-gradient(180deg,#91d6f3 0%,#ffffff 23.44%,#ffffff 75%,#91d6f3 100%);
+        }
+
+        .stages__content-navigation .start {
+            background: #91d6f3;
+
+            &.active {
+                background: #ffffff;
+            }
+        }
+
+        .stages__content-navigation .end {
+            background: #91d6f3;
+
+            &.active {
+                background: #ffffff;
+            }
+        }
+
+        &.structure .accordion__item.active .accordion__item-header>span {
+            color: var(--color-white);
+        }
+
+        &.structure .accordion__item-header>span .badge {
+            color: var(--color-default);
+        }
+
+        .structure__content-item__type,
+        &.structure .accordion__item-header .type {
+            color: rgba(255, 255, 255, .5);
+        }
+
+        &.structure .accordion__item.active .accordion__item-header .type {
+            color: var(--color-white);
+        }
+
+        .prices__list-icons .item:not(.active) .item__icon:after {
+            display: none !important;
+        }
+
+        .prices__list-bg i.active {
+            background: var(--color-white);
+        }
+
+        .prices__list-costs .item:not(.active) .item__title strong {
+            color: var(--color-white) !important;
+        }
+
+        .prices__list-costs .item.active .item__title {
+            color: var(--color-default);
+        }
+
+        .prices__list-costs .item:not(.active) .item__price {
+            background: var(--color-white) !important;
+            -webkit-background-clip: text !important;
+        }
+
+        .prices__list-costs .item:not(.active) .item__price-old {
+            color: rgba(255, 255, 255, .5) !important;
+        }
+
+        .prices__list-description .item:not(.active) p.bonus {
+            background: none;
+            color: var(--color-white);
+
+            -webkit-background-clip: unset;
+            -webkit-text-fill-color: unset;
+        }
+
+        .prices__list-description .item.active p {
+            color: var(--color-default);
+        }
+    }
+}

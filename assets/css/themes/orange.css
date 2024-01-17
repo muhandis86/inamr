@@ -1,0 +1,89 @@
+section {
+    &.bg__orange {
+        background: var(--gradient-orange);
+
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            pointer-events: none;
+            @mixin i background/bg1;
+            background-position: top center;
+        }
+
+        &.bg__image {
+            overflow-y: hidden;
+
+            &:before {
+                z-index: 2;
+                background: #F57C00;
+                opacity: .75;
+            }
+        }
+
+        form {
+            label {
+                i {
+                    color: var(--color-default);
+                }
+            }
+        }
+
+        .static__list-item__number strong {
+            color: var(--color-orange);
+        }
+
+        .product__gallery-images__image.active {
+            border-color: var(--color-orange);
+        }
+
+        .stages__content-navigation .progress {
+            background: linear-gradient(180deg,#ffc24d 0%,#fff 23.44%,#fff 75%,#ffc24d 100%) !important;
+        }
+
+        .stages__content-navigation .start,
+        .stages__content-navigation .end,
+        .stages__content-navigation:after {
+            background: #ffc24d !important;
+        }
+
+        .stages__content-number {
+            color: var(--color-orange) !important;
+        }
+
+        .stages__content-navigation .start.active,
+        .stages__content-navigation .end.active {
+            background: var(--color-white) !important;
+        }
+
+        .reviews__item-image {
+            background: var(--color-white);
+        }
+
+        .reviews__item-image span {
+            border-color: #ffc24d;
+        }
+
+
+        .reviews__item-text__stars i {
+            background: none;
+            color: rgba(255, 255, 255, .5);
+
+            -webkit-background-clip: unset;
+            -webkit-text-fill-color: unset;
+        }
+
+        .reviews__item-text__stars i.active {
+            background: none;
+            color: var(--color-white);
+
+            -webkit-background-clip: unset;
+            -webkit-text-fill-color: unset;
+        }
+    }
+}

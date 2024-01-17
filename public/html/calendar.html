@@ -1,0 +1,198 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Календарь</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link href="/bundles/css/app.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <main>
+        <div class="container">
+            <div id="calendar"></div>
+        </div>
+
+        <div tabindex="-1" class="modal" id="calendarModal">
+            <div class="modal-dialog" id="calendarDialog">
+                <div class="modal-content">
+                    <div class="modal__box modal__info">
+                        <div class="modal__box-calendar">
+                            <div class="modal-header">
+                                <h3 class="modal-title"></h3>
+                            </div>
+                            <div class="modal-body">
+                                <div class="modal-subtitle h5"></div>
+                                <div class="modal-description"></div>
+                                <div class="modal-teacher"></div>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#" class="btn btn-light">
+                                    <span>Оставить заявку</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        const jsonData = [
+
+            //-----------event for more days----------------------
+            {
+                title: 'другой семинар - 1',
+                description: 'ТОЛЬКО для выпускников программы “Методика Войта”',
+                teacher: 'Иван Иванов',
+                startRecur: '2024-01-10',
+                endRecur: '2024-01-15',
+                startTime: '07:00:00',
+                endTime: '08:30:00'
+            },
+
+            //------------event for one day----------------------
+            {
+                title: 'другой семинар',
+                description: 'ТОЛЬКО для выпускников программы “Методика Войта”',
+                teacher: 'Иван Иванов',
+                start: '2024-01-17T15:00:00',
+                end: '2024-01-17T17:30:00'
+            },
+            {
+                title: 'другой семинар',
+                description: 'ТОЛЬКО для выпускников программы “Методика Войта”',
+                teacher: 'Иван Иванов',
+                start: '2024-01-15T010:00:00',
+                end: '2024-01-15T10:30:00'
+            },
+            {
+                title: 'другой семинар',
+                description: 'ТОЛЬКО для выпускников программы “Методика Войта”',
+                teacher: 'Иван Иванов',
+                start: '2024-01-20T07:00:00',
+                end: '2024-01-20T07:30:00'
+            },
+            {
+                title: 'другой семинар',
+                description: 'ТОЛЬКО для выпускников программы “Методика Войта”',
+                teacher: 'Иван Иванов',
+                start: '2024-01-19T07:00:00',
+                end: '2024-01-19T07:30:00'
+            },
+            {
+                title: 'другой семинар',
+                description: 'ТОЛЬКО для выпускников программы “Методика Войта”',
+                teacher: 'Иван Иванов',
+                start: '2024-01-19T07:30:00',
+                end: '2024-01-19T08:00:00'
+            },
+            {
+                title: 'другой семинар',
+                description: 'ТОЛЬКО для выпускников программы “Методика Войта”',
+                teacher: 'Иван Иванов',
+                start: '2024-01-19T08:00:00',
+                end: '2024-01-19T08:30:00'
+            },
+            {
+                title: 'другой семинар',
+                description: 'ТОЛЬКО для выпускников программы “Методика Войта”',
+                teacher: 'Иван Иванов',
+                start: '2024-01-29T08:30:00',
+                end: '2024-01-29T09:00:00'
+            },
+            {
+                title: 'другой семинар',
+                description: 'ТОЛЬКО для выпускников программы “Методика Войта”',
+                teacher: 'Иван Иванов',
+                start: '2024-01-29T09:00:00',
+                end: '2024-01-29T09:30:00'
+            },
+            {
+                title: 'другой семинар',
+                description: 'ТОЛЬКО для выпускников программы “Методика Войта”',
+                teacher: 'Иван Иванов',
+                start: '2024-01-09T09:30:00',
+                end: '2024-01-09T10:00:00'
+            },
+            {
+                title: 'другой семинар',
+                description: 'ТОЛЬКО для выпускников программы “Методика Войта”',
+                teacher: 'Иван Иванов',
+                start: '2024-01-09T10:00:00',
+                end: '2024-01-09T12:30:00'
+            },
+            {
+                title: 'рефреш “Стабилизация шеи”',
+                description: 'ТОЛЬКО для выпускников программы “Методика Войта”',
+                teacher: 'Иван Иванов',
+                start: '2024-01-24T09:30:00',
+                end: '2024-01-24T10:00:00'
+            },
+            {
+                title: 'рефреш “Стабилизация шеи”',
+                description: 'ТОЛЬКО для выпускников программы “Методика Войта”',
+                teacher: 'Иван Иванов',
+                start: '2024-01-24T10:00:00',
+                end: '2024-01-24T10:30:00'
+            },
+            {
+                title: 'рефреш “Стабилизация шеи”',
+                description: 'ТОЛЬКО для выпускников программы “Методика Войта”',
+                teacher: 'Иван Иванов',
+                start: '2024-01-24T10:30:00',
+                end: '2024-01-24T11:00:00'
+            },
+            {
+                title: 'рефреш “Стабилизация шеи”',
+                description: 'ТОЛЬКО для выпускников программы “Методика Войта”',
+                teacher: 'Иван Иванов',
+                start: '2024-01-24T11:00:00',
+                end: '2024-01-24T11:30:00'
+            },
+            {
+                title: 'рефреш “Стабилизация шеи”',
+                description: 'ТОЛЬКО для выпускников программы “Методика Войта”',
+                teacher: 'Иван Иванов',
+                start: '2024-01-24T11:30:00',
+                end: '2024-01-24T12:00:00'
+            },
+            {
+                title: 'рефреш “Стабилизация шеи”',
+                description: 'ТОЛЬКО для выпускников программы “Методика Войта”',
+                teacher: 'Иван Иванов',
+                start: '2024-01-24T12:30:00',
+                end: '2024-01-24T13:00:00'
+            },
+            {
+                title: 'рефреш “Стабилизация шеи”',
+                description: 'ТОЛЬКО для выпускников программы “Методика Войта”',
+                teacher: 'Иван Иванов',
+                start: '2024-01-14T11:30:00',
+                end: '2024-01-14T12:00:00'
+            },
+            {
+                title: 'рефреш “Стабилизация шеи”',
+                description: 'ТОЛЬКО для выпускников программы “Методика Войта”',
+                teacher: 'Иван Иванов',
+                start: '2024-02-04T12:00:00',
+                end: '2024-02-04T12:30:00'
+            }
+        ]   
+    </script>
+
+    <script src="/bundles/webpack/vendor.bundle.js"></script>
+    <script src="/bundles/webpack/app.bundle.js"></script>
+
+</body>
+
+</html>
